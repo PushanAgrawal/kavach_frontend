@@ -221,7 +221,7 @@ export default function Home() {
                   </div>
                   <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                     <div className='flex flex-col gap-y-2 w-full'>
-                      <img src={createObjectURL} />
+                      {/* <img src={createObjectURL} /> */}
                       <h4>Select Image</h4>
                       <input type="file" name="myImage" accept="image/png, image/jpeg, image/jpg" onChange={imageChange} />
                       <div className='flex gap-x-4'>
