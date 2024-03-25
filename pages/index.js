@@ -34,7 +34,7 @@ export default function Home() {
 		  formData.append('image', image);
       formData.append('title',"abcd");
       formData.append('user',2);
-      await axios.post("http://localhost:8000/api/create", formData, config)
+      await axios.post("https://kavach-backend-yzz3.onrender.com/api/create", formData, config)
         .then(resp => {
           console.log(openTab)
           console.log(resp.data);
@@ -48,7 +48,7 @@ export default function Home() {
 
     // search route to backend for result
     setResult("........");
-      axios.post("http://localhost:8000/apis/",{
+      axios.post("https://kavach-backend-yzz3.onrender.com/apis/",{
         choice:openTab,
         text: note,
         })
